@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutHarissBenedict"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/OneHundredAndSeventyFiveIntuit"
+        android:background="@color/backgroundScreens"
+        app:expanded="false">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayoutHarissBenedict"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            app:expandedTitleMarginBottom="@dimen/twentyFourIntuit"
+            app:expandedTitleMarginStart="@dimen/sixteenIntuit"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/threeHundredIntuit"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="?attr/actionBarSize"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="1.0">
+
+
+                <Button
+                    android:id="@+id/buttonJan"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:layout_marginBottom="@dimen/fourIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Jan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/buttonFeb"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:layout_marginBottom="@dimen/fourIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Feb"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/buttonMar"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:layout_marginBottom="@dimen/fourIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/buttonApr"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:layout_marginBottom="@dimen/fourIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Apr"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="3"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/buttonMay"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:layout_marginBottom="@dimen/fourIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="May"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="4"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/buttonJun"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginBottom="@dimen/fourIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Jun"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="5"
+                    app:layout_row="0" />
+
+                <Button
+                    android:id="@+id/buttonJuly"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginTop="@dimen/fourIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Jul"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <Button
+                    android:id="@+id/buttonAug"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginTop="@dimen/fourIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Aug"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="1"
+                    app:layout_row="1" />
+
+                <Button
+                    android:id="@+id/buttonSep"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginTop="@dimen/fourIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Sep"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+
+                <Button
+                    android:id="@+id/buttonOct"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginTop="@dimen/fourIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Oct"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="3"
+                    app:layout_row="1" />
+
+                <Button
+                    android:id="@+id/buttonNov"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginTop="@dimen/fourIntuit"
+                    android:layout_marginRight="@dimen/eightIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Nov"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="4"
+                    app:layout_row="1" />
+
+                <Button
+                    android:id="@+id/buttonDec"
+                    android:layout_width="@dimen/fortyIntuit"
+                    android:layout_height="@dimen/fortyIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginTop="@dimen/fourIntuit"
+                    android:background="@drawable/button_for_months"
+                    android:text="Dec"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteenIntuit"
+                    app:layout_column="5"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarHarissBenedict"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/imageViewBackHarissBenedict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/back_arrow" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutHarissBenedict"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+
+                    <TextView
+                        android:id="@+id/textViewDatePickerAppBarHarissBenedict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/sixteenIntuit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/twentyIntuit" />
+
+                    <ImageView
+                        android:id="@+id/imageViewArrowAppBarHarissBenedict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/eightIntuit"
+                        android:layout_toRightOf="@+id/textViewDatePickerAppBarHarissBenedict"
+                        android:background="@drawable/ic_arrow_drop_down_calendar" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/content_hariss_benedict"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

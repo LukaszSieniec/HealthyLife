@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundScreens"
+    tools:context="com.example.registration.WeightFragment">
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:text="@string/textViewWeight"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyFourIntuit"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewUpdateWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWeight"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center_vertical"
+        android:text="@string/textViewUpdateWeight"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fourteenIntuit" />
+
+    <EditText
+        android:id="@+id/editTextEnterCurrentWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUpdateWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eightyIntuit"
+        android:background="@drawable/frame_for_edittext"
+        android:digits="0123456789."
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/editTextEnterCurrentWeight"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingTop="@dimen/eightIntuit"
+        android:paddingBottom="@dimen/eightIntuit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyTwoIntuit" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonNextWeight"
+        android:layout_width="@dimen/sixtyFourIntuit"
+        android:layout_height="@dimen/sixtyFourIntuit"
+        android:layout_below="@+id/editTextEnterCurrentWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/OneHundredAndFiftyIntuit"
+        android:background="@drawable/button_bg_round"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/next_arrow" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/backgroundScreens"
+    tools:context="com.example.registration.SignUp" >
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:text="@string/textViewSignUp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyFourIntuit"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextEmailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fortyEightIntuit"
+        android:ems="10"
+        android:hint="@string/editTextEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteenIntuit" />
+
+    <EditText
+        android:id="@+id/editTextPasswordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmailSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/thirtyTwoIntuit"
+        android:ems="10"
+        android:hint="@string/editTextPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteenIntuit" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextEmailSignUp"
+        android:layout_alignBottom="@+id/editTextEmailSignUp"
+        android:layout_marginRight="@dimen/eightIntuit"
+        android:layout_toStartOf="@+id/editTextEmailSignUp"
+        android:layout_toLeftOf="@+id/editTextEmailSignUp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextPasswordSignUp"
+        android:layout_alignBottom="@+id/editTextPasswordSignUp"
+        android:layout_marginRight="@dimen/eightIntuit"
+        android:layout_toStartOf="@+id/editTextPasswordSignUp"
+        android:layout_toLeftOf="@+id/editTextPasswordSignUp"
+        app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNextSignUp"
+        android:layout_width="@dimen/sixtyFourIntuit"
+        android:layout_height="@dimen/sixtyFourIntuit"
+        android:layout_below="@+id/editTextPasswordSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixtyFourIntuit"
+        android:background="@drawable/button_bg_round"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/next_arrow" />
+</RelativeLayout>

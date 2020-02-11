@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundScreens"
+    tools:context="com.example.signin.SignIn">
+
+    <ImageButton
+        android:id="@+id/imageButtonBackSignIn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/sixteenIntuit"
+        android:layout_marginLeft="@dimen/sixteenIntuit"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:contentDescription="@null"
+        android:scaleType="center"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/textViewSignInSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixtyFourIntuit"
+        android:text="@string/textViewSignInSecond"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyFourIntuit"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextEmailSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSignInSecond"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fortyEightIntuit"
+        android:ems="10"
+        android:hint="@string/editTextEmailSignIn"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteenIntuit" />
+
+    <EditText
+        android:id="@+id/editTextPasswordSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmailSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/thirtyTwoIntuit"
+        android:ems="10"
+        android:hint="@string/editTextPasswordSignIn"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteenIntuit" />
+
+    <ImageView
+        android:id="@+id/imageViewEmailSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextEmailSignIn"
+        android:layout_alignBottom="@+id/editTextEmailSignIn"
+        android:layout_marginEnd="@dimen/eightIntuit"
+        android:layout_marginRight="@dimen/eightIntuit"
+        android:layout_toStartOf="@+id/editTextEmailSignIn"
+        android:layout_toLeftOf="@+id/editTextEmailSignIn"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPasswordSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextPasswordSignIn"
+        android:layout_alignBottom="@+id/editTextPasswordSignIn"
+        android:layout_marginEnd="@dimen/eightIntuit"
+        android:layout_marginRight="@dimen/eightIntuit"
+        android:layout_toStartOf="@+id/editTextPasswordSignIn"
+        android:layout_toLeftOf="@+id/editTextPasswordSignIn"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonNextSignIn"
+        android:layout_width="@dimen/sixtyFourIntuit"
+        android:layout_height="@dimen/sixtyFourIntuit"
+        android:layout_below="@+id/editTextPasswordSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixtyFourIntuit"
+        android:background="@drawable/button_bg_round"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/next_arrow" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonNextSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixtyFourIntuit">
+
+        <TextView
+            android:id="@+id/textViewQuestionMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fourIntuit"
+            android:paddingEnd="@dimen/fourIntuit"
+            android:paddingRight="@dimen/fourIntuit"
+            android:text="@string/textViewQuestionMember"
+            android:textSize="@dimen/twentyIntuit" />
+
+        <TextView
+            android:id="@+id/textViewSignUpSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/fourIntuit"
+            android:paddingLeft="@dimen/fourIntuit"
+            android:paddingRight="@dimen/fourIntuit"
+            android:text="@string/textViewSignUpSecond"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyIntuit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

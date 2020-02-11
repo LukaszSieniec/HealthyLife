@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollViewEditProduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dietDiary_background"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_edit_product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewEditInDietDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/sixteenIntuit"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:text="@string/textViewEditInDietDiary"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteenIntuit" />
+
+        <EditText
+            android:id="@+id/editTextCurrentWeightEditProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewEditInDietDiary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/thirtyTwoIntuit"
+            android:digits="0123456789."
+            android:ems="10"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editTextCurrentWeightEditProduct"
+            android:layout_alignBottom="@+id/editTextCurrentWeightEditProduct"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            android:layout_marginBottom="0dp"
+            android:layout_toStartOf="@+id/editTextCurrentWeightEditProduct"
+            android:layout_toLeftOf="@+id/editTextCurrentWeightEditProduct"
+            app:srcCompat="@drawable/ic_shuffle" />
+
+        <TextView
+            android:id="@+id/textViewGramEditProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextCurrentWeightEditProduct"
+            android:layout_alignTop="@+id/editTextCurrentWeightEditProduct"
+            android:layout_alignBottom="@+id/editTextCurrentWeightEditProduct"
+            android:layout_marginStart="@dimen/sixteenIntuit"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_toEndOf="@+id/editTextCurrentWeightEditProduct"
+            android:layout_toRightOf="@+id/editTextCurrentWeightEditProduct"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteenIntuit" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCurrentWeightEditProduct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/thirtyTwoIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit">
+
+            <Button
+                android:id="@+id/buttonDeleteProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fourIntuit"
+                android:layout_marginRight="@dimen/fourIntuit"
+                android:layout_weight="1"
+                android:background="@drawable/button_delete_product"
+                android:text="@string/buttonDeleteProduct"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fourIntuit"
+                android:layout_marginLeft="@dimen/fourIntuit"
+                android:layout_weight="1"
+                android:background="@drawable/button_save_product"
+                android:text="@string/buttonEditProduct"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayoutButtons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/thirtyTwoIntuit">
+
+            <TextView
+                android:id="@+id/textViewCaloriesEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fourIntuit"
+                android:layout_marginLeft="@dimen/fourIntuit"
+                android:layout_marginEnd="@dimen/twoIntuit"
+                android:layout_marginRight="@dimen/twoIntuit"
+                android:layout_marginBottom="@dimen/twoIntuit"
+                android:background="@drawable/buttons_macronutrients"
+                android:gravity="center"
+                android:paddingTop="@dimen/sixteenIntuit"
+                android:paddingBottom="@dimen/sixteenIntuit"
+                android:text="@string/textViewCaloriesEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <TextView
+                android:id="@+id/textViewFatEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twoIntuit"
+                android:layout_marginLeft="@dimen/twoIntuit"
+                android:layout_marginEnd="@dimen/fourIntuit"
+                android:layout_marginRight="@dimen/fourIntuit"
+                android:layout_marginBottom="@dimen/twoIntuit"
+                android:background="@drawable/buttons_macronutrients"
+                android:gravity="center"
+                android:paddingTop="@dimen/sixteenIntuit"
+                android:paddingBottom="@dimen/sixteenIntuit"
+                android:text="@string/textViewFatEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <TextView
+                android:id="@+id/textViewCarbohydratesEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fourIntuit"
+                android:layout_marginLeft="@dimen/fourIntuit"
+                android:layout_marginTop="@dimen/twoIntuit"
+                android:layout_marginEnd="@dimen/twoIntuit"
+                android:layout_marginRight="@dimen/twoIntuit"
+                android:background="@drawable/buttons_macronutrients"
+                android:gravity="center"
+                android:paddingTop="@dimen/sixteenIntuit"
+                android:paddingBottom="@dimen/sixteenIntuit"
+                android:text="@string/textViewCarbohydratesEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="1"
+                app:layout_rowWeight="1" />
+
+            <TextView
+                android:id="@+id/textViewProteinEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twoIntuit"
+                android:layout_marginLeft="@dimen/twoIntuit"
+                android:layout_marginTop="@dimen/twoIntuit"
+                android:layout_marginEnd="@dimen/fourIntuit"
+                android:layout_marginRight="@dimen/fourIntuit"
+                android:background="@drawable/buttons_macronutrients"
+                android:gravity="center"
+                android:paddingTop="@dimen/sixteenIntuit"
+                android:paddingBottom="@dimen/sixteenIntuit"
+                android:text="@string/textViewProteinEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewNutritionInformationEditProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/thirtyTwoIntuit"
+            android:text="@string/textViewNutritionInformationEditProduct"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twentyTwoIntuit"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/textViewNutritionInformationEditProduct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPortion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPortionEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewPortionEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPortionWeightEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/textViewPortionWeightEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteenIntuit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eightIntuit"
+            android:layout_below="@+id/linearLayoutPortion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMacronutrients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewMacronutrientsEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewMacronutrientsEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionsEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionsEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewRWSEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="@string/textViewRWSEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourIntuit"
+            android:layout_below="@+id/linearLayoutMacronutrients"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEnergy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPerPortionEnergyEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewPerPortionEnergyEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionkJEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionkJEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionPercentEnergyEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionPercentEnergyEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCalories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayoutEnergy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewEmpty1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionCaloriesEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionCaloriesEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit" />
+
+            <TextView
+                android:id="@+id/textViewEmpty2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/linearLayoutCalories"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPerPortionFatEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewPerPortionFatEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionFatWeightEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionFatWeightEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionPercentFatEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionPercentFatEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/linearLayoutFat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCarbohydrates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/divider7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPerPortionCarbohydratesEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewPerPortionCarbohydratesEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionWeightCarbohydratesEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionWeightCarbohydratesEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionPercentCarbohydratesEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionPercentCarbohydratesEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/linearLayoutCarbohydrates"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutProtein"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/divider8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPerPortionProteinEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textViewPerPortionProteinEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionWeightProteinEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionWeightProteinEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPerPortionPercentProteinEditProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="@string/textViewPerPortionPercentProteinEditProduct"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenIntuit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourIntuit"
+            android:layout_below="@+id/linearLayoutProtein"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:layout_marginRight="@dimen/thirtyTwoIntuit"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewReference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider9"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:layout_marginBottom="@dimen/oneIntuit"
+            android:text="@string/textViewReference" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

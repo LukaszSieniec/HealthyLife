@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomNavigationDietDiary"
+        android:icon="@drawable/diet_diary"
+        android:title="Diety diary"
+        />
+
+    <item
+        android:id="@+id/bottomNavigationWeightController"
+        android:icon="@drawable/weight_controller"
+        android:title="Weight"
+        />
+
+    <item
+        android:id="@+id/bottomNavigationBodyCircuits"
+        android:icon="@drawable/body_circuits"
+        android:title="Body circuits"
+        />
+</menu>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundScreens"
+    tools:context="com.example.registration.DateOfBirthFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textViewDateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:text="@string/textViewDateOfBirth"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyFourIntuit"
+        android:textStyle="bold" />
+
+
+    <DatePicker
+        android:id="@+id/DatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDateOfBirth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+        android:layout_marginTop="@dimen/sixtyFourIntuit"
+        android:layout_marginRight="@dimen/thirtyTwoIntuit"
+        android:background="@drawable/frame_for_datepicker"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNextDateOfBirth"
+        android:layout_width="@dimen/sixtyFourIntuit"
+        android:layout_height="@dimen/sixtyFourIntuit"
+        android:layout_below="@+id/DatePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ninetySixIntuit"
+        android:background="@drawable/button_bg_round"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/next_arrow" />
+
+
+</RelativeLayout>

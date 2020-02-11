@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">HealthyLife</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- StartNow Activity-->
+    <string name="textViewTitle">HealthyLife</string>
+    <string name="buttonStartNow">START NOW</string>
+    <string name="textViewQuestion">Registered user?</string>
+    <string name="textViewSignIn">SIGN IN</string>
+
+    <!-- Information Fragment-->
+    <string name="textViewWelcome">Welcome</string>
+    <string name="textViewMessage">We need to ask you some questions. Please be advised that the information provided will be used to calculate your BMR and CPM.</string>
+    <string name="textViewGender">Select your gender:</string>
+    <string name="textViewManOrWoman">\?</string>
+
+    <!-- Level of Activity Fragment-->
+    <string name="textViewLevelOfActivity">Select your level of activity:</string>
+    <string name="buttonVeryLow">Very low\nInactivity - sedentary work.</string>
+    <string name="buttonLow">Low\nLow activity - sedentary work and 1-2 trainings a week.</string>
+    <string name="buttonMedium">Medium\nMedium activity - sedentary work and\ntraining 3-4 times a week.</string>
+    <string name="buttonHigh">High\nHigh activity - physical work and\n3-4 training sessions per week.</string>
+    <string name="buttonVeryHigh">Very high\nVery high activity - professional athletes, people training every day.</string>
+
+    <!-- Weight Fragment-->
+    <string name="textViewWeight">What is your current weight?</string>
+    <string name="textViewUpdateWeight">You can always update your weight later.</string>
+    <string name="editTextEnterCurrentWeight">Enter your current weight (kg)</string>
+
+    <!-- Muslce Mass Fragment-->
+    <string name="textViewMuscleMass">What is your current muscle mass content in total body weight?</string>
+    <string name="textViewSkip">You can skip this page, but providing muscle mass content in total body weight will allow us to calculate your caloric demand more accurately.</string>
+    <string name="editTextEnterCurrentMuscleMass">Enter your current muscle mass (kg)</string>
+    <string name="textViewSecondSkip">Skip</string>
+
+    <!-- Height Fragment-->
+    <string name="textViewHeight">What is your height?</string>
+    <string name="editTextEnterHeight">Enter your height (cm)</string>
+
+    <!-- Date Od Birth Fragment-->
+    <string name="textViewDateOfBirth">What is your date of birth?</string>
+
+    <!-- Sign Up-->
+    <string name="textViewSignUp">Sign up, using e-mail</string>
+    <string name="editTextEmail">Send e-mail</string>
+    <string name="editTextPassword">Password</string>
+
+    <!-- Sign In-->
+    <string name="textViewSignInSecond">Sign In</string>
+    <string name="editTextEmailSignIn">Send e-mail</string>
+    <string name="editTextPasswordSignIn">Password</string>
+    <string name="textViewQuestionMember">You are not a member?</string>
+    <string name="textViewSignUpSecond">Sign Up!</string>
+
+    <!--Main Screen -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Diet Diary Fragment -->
+    <string name="buttonAddProductBreakfast">Breakfast</string>
+    <string name="buttonAddProductLunch">Lunch</string>
+    <string name="buttonAddProductDinner">Dinner</string>
+    <string name="buttonAddSnacks">Snacks</string>
+    <string name="textViewSummary">Summary</string>
+    <string name="textViewCaloriesToBeConsumed">Calories to be consumed</string>
+    <string name="textViewCaloriesConsumed">Calories consumed</string>
+    <string name="textViewPercentFromGDA">%s%% from GDA </string>
+    <string name="textViewSummaryCarbohydrates">Carbohydrates: %1$sg</string>
+    <string name="textViewSummaryProtein">Protein: %1$sg</string>
+    <string name="textViewSummaryFat">Fat: %1$sg</string>
+
+    <!--Content Save Product -->
+    <string name="textViewAddToDietDiary">Add product to Diet Diary</string>
+    <string name="textViewCaloriesSaveProduct">Calories\n %1$s</string>
+    <string name="textViewFatSaveProduct">Fat\n %1$s g</string>
+    <string name="textViewCarbohydratesSaveProduct">Carbohydrates\n %1$s g</string>
+    <string name="textViewProteinSaveProduct">Protein\n %1$s g</string>
+    <string name="textViewNutritionInformation">Nutrition Information</string>
+    <string name="textViewPortionSaveProduct">Portion</string>
+    <string name="textViewPortionWeightSaveProduct">%1$s %2$s</string>
+    <string name="textViewMacronutrientsSaveProduct">Macronutrients</string>
+    <string name="textViewPerPortionsSaveProduct">Per portion</string>
+    <string name="textViewPerPortionPercentEnergySaveProduct">%s%%</string>
+    <string name="textViewRWSSaveProduct">%RWS*</string>
+    <string name="textViewPerPortionEnergySaveProduct">Energy</string>
+    <string name="textViewPerPortionkJSaveProduct">%1$s kJ</string>
+    <string name="textViewPerPortionCaloriesSaveProduct">%1$s calories</string>
+    <string name="textViewPerPortionFatSaveProduct">Fat</string>
+    <string name="textViewPerPortionFatWeightSaveProduct">%1$s g</string>
+    <string name="textViewPerPortionPercentFatSaveProduct">%s%%</string>
+    <string name="textViewPerPortionCarbohydratesSaveProduct">Carbohydrates</string>
+    <string name="textViewPerPortionWeightCarbohydratesSaveProduct">%1$s g</string>
+    <string name="textViewPerPortionPercentCarbohydratesSaveProduct">%s%%</string>
+    <string name="textViewPerPortionProteinSaveProduct">Protein</string>
+    <string name="textViewPerPortionWeightProteinSaveProduct">%1$s g</string>
+    <string name="textViewPerPortionPercentProteinSaveProduct">%s%%</string>
+    <string name="textViewReference">* Reference intake for an average adult (8400 kJ / 2000 kcal).</string>
+
+    <string name="buttonSaveProduct">SAVE</string>
+
+
+    <!--Content EditProduct -->
+    <string name="textViewEditInDietDiary">Edit product in Diet Diary</string>
+    <string name="textViewCaloriesEditProduct">Calories\n %1$s</string>
+    <string name="textViewFatEditProduct">Fat\n %1$s g</string>
+    <string name="textViewCarbohydratesEditProduct">Carbohydrates\n %1$s g</string>
+    <string name="textViewProteinEditProduct">Protein\n %1$s g</string>
+    <string name="textViewNutritionInformationEditProduct">Nutrition Information</string>
+    <string name="textViewPortionEditProduct">Portion</string>
+    <string name="textViewPortionWeightEditProduct">%1$s %2$s</string>
+    <string name="textViewMacronutrientsEditProduct">Macronutrients</string>
+    <string name="textViewPerPortionsEditProduct">Per portion</string>
+    <string name="textViewPerPortionPercentEnergyEditProduct">%s%%</string>
+    <string name="textViewRWSEditProduct">%RWS*</string>
+    <string name="textViewPerPortionEnergyEditProduct">Energy</string>
+    <string name="textViewPerPortionkJEditProduct">%1$s kJ</string>
+    <string name="textViewPerPortionCaloriesEditProduct">%1$s calories</string>
+    <string name="textViewPerPortionFatEditProduct">Fat</string>
+    <string name="textViewPerPortionFatWeightEditProduct">%1$s g</string>
+    <string name="textViewPerPortionPercentFatEditProduct">%s%%</string>
+    <string name="textViewPerPortionCarbohydratesEditProduct">Carbohydrates</string>
+    <string name="textViewPerPortionWeightCarbohydratesEditProduct">%1$s g</string>
+    <string name="textViewPerPortionPercentCarbohydratesEditProduct">%s%%</string>
+    <string name="textViewPerPortionProteinEditProduct">Protein</string>
+    <string name="textViewPerPortionWeightProteinEditProduct">%1$s g</string>
+    <string name="textViewPerPortionPercentProteinEditProduct">%s%%</string>
+
+    <string name="buttonEditProduct">EDIT</string>
+    <string name="buttonDeleteProduct">DELETE</string>
+
+    <!--NewProductFragment -->
+    <string name="textViewProductNameNewProduct">Product name:</string>
+    <string name="textViewProductNewProduct">Product</string>
+    <string name="textViewEnterProductNameNewProduct">Enter the product name</string>
+    <string name="textViewPortionAndNutritionInformationNewProduct">Portion and nutrition information:</string>
+    <string name="textViewNutritionalValueNewProduct">Nutritional value</string>
+    <string name="textViewEnterTheNutritionalValueNewProduct">Enter the nutritional value</string>
+    <string name="textViewEnterTheNutritionalValueNewProductSecond">A metric portion: %1$s %2$s\nCalories: %3$s\nProtein: %4$s gram\nCarbohydrates: %5$s gram\nFat: %6$s gram</string>
+    <string name="textViewQuestionProduct">Can\'t find the product?\nAdd a new product</string>
+
+
+    <!--FragmentDialog_FragmentNameProduct -->
+    <string name="textViewEnterNameProductDialogFragmentNameProduct">Enter the product name</string>
+    <string name="editTextEnterNameProduct">Product name</string>
+
+    <!--FragmentDialog_FragmentNutritionalValue -->
+    <string name="textViewNutritionalValue">Enter nutritional values</string>
+    <string name="textViewAMetricPortionNutritionalValue">A metric portion</string>
+    <string name="editTextAMetricPortionNutritionalValue">100</string>
+    <string name="textViewUnitNutritionalValue">gram</string>
+    <string name="textViewCaloriesNutritionalValue">Calories *</string>
+    <string name="editTextCaloriesNutritionalValue">Calories</string>
+    <string name="textViewCaloriesNutritionalValueInfo">calories</string>
+    <string name="textViewProteinNutritionalValue">Protein *</string>
+    <string name="editTextProteinNutritionalValue">Protein</string>
+    <string name="textViewProteinNutritionalValueUnit">gram</string>
+    <string name="textViewCarbohydratesNutritionalValue">Carbohydrates *</string>
+    <string name="editTextCarbohydratesNutritionalValue">Carbohydrates</string>
+    <string name="textViewCarbohydratesNutritionalValueUnit">gram</string>
+    <string name="textViewFatNutritionalValue">Fat *</string>
+    <string name="editTextFatNutritionalValue">Fat</string>
+    <string name="textViewFatNutritionalValueUnit">gram</string>
+
+    <!--Fragment Weight Controller-->
+    <string name="textViewInitialWeightValue">%1$s kg</string>
+
+
+    <string-array name="units">
+        <item>gram</item>
+        <item>ml</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

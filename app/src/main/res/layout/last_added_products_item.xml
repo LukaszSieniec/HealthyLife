@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewLastAddedName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/sixteenIntuit"
+        android:paddingTop="@dimen/sixteenIntuit"
+        android:paddingRight="@dimen/sixteenIntuit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteenIntuit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewLastAddedWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sixteenIntuit"
+            android:paddingBottom="@dimen/sixteenIntuit"
+            android:textColor="@color/backgroundScreens"
+            android:textSize="@dimen/sixteenIntuit" />
+
+        <TextView
+            android:id="@+id/textViewLastAddedCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sixteenIntuit"
+            android:paddingBottom="@dimen/sixteenIntuit"
+            android:textColor="#8F8989"
+            android:textSize="@dimen/sixteenIntuit" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twoIntuit"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+</LinearLayout>

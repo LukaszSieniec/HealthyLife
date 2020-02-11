@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutExpandableRecyclerViewProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneIntuit"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewNameProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/sixteenIntuit"
+            android:paddingLeft="@dimen/sixteenIntuit"
+            android:paddingTop="@dimen/eightIntuit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteenIntuit" />
+
+        <TextView
+            android:id="@+id/textViewCaloriesProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="@dimen/eightIntuit"
+            android:paddingEnd="@dimen/sixteenIntuit"
+            android:paddingRight="@dimen/sixteenIntuit"
+            android:textColor="#FFA5A2A2"
+            android:textSize="@dimen/eighteenIntuit"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewWeightProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutProduct"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingStart="@dimen/sixteenIntuit"
+        android:paddingLeft="@dimen/sixteenIntuit"
+        android:paddingBottom="@dimen/eightIntuit"
+        android:textColor="@color/backgroundScreens"
+        android:textSize="@dimen/sixteenIntuit" />
+
+</RelativeLayout>

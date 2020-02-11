@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:windowSoftInputMode="adjustNothing"
+    android:background="@color/backgroundScreens"
+    tools:context="com.example.registration.MuscleMassFragment">
+
+    <TextView
+        android:id="@+id/textViewMuscleMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:gravity="center"
+        android:text="@string/textViewMuscleMass"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyFourIntuit"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMuscleMass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/sixteenIntuit"
+        android:layout_marginRight="@dimen/sixteenIntuit"
+        android:gravity="center"
+        android:text="@string/textViewSkip"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextEnterCurrentMuscleMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSkip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eightyIntuit"
+        android:background="@drawable/frame_for_edittext"
+        android:digits="0123456789."
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/editTextEnterCurrentMuscleMass"
+        android:inputType="number"
+        android:paddingTop="@dimen/eightIntuit"
+        android:paddingBottom="@dimen/eightIntuit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyTwoIntuit" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonNextMuscleMass"
+        android:layout_width="@dimen/sixtyFourIntuit"
+        android:layout_height="@dimen/sixtyFourIntuit"
+        android:layout_below="@+id/editTextEnterCurrentMuscleMass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/oneHundredIntuit"
+        android:background="@drawable/button_bg_round"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/next_arrow" />
+
+    <TextView
+        android:id="@+id/textViewSecondSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOr"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eightIntuit"
+        android:text="@string/textViewSecondSkip"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyTwoIntuit"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonNextMuscleMass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eightIntuit"
+        android:text="or"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyTwoIntuit" />
+
+</RelativeLayout>

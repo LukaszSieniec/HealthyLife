@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dietDiary_background"
+    tools:context="com.example.diary.MuscleMassControllerFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMuscleMass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/oneHundredIntuit">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMuscleMass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="#B35B6DE0"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sixteenIntuit">
+
+            <TextView
+                android:id="@+id/textViewCurrentMuscleMass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteenIntuit"
+                android:gravity="center"
+                android:text="Current muscle mass"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twentyTwoIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCurrentMuscleMassValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fourIntuit"
+                android:background="@drawable/text_view_weight"
+                android:gravity="center"
+                android:paddingLeft="@dimen/thirtyTwoIntuit"
+                android:paddingEnd="@dimen/thirtyTwoIntuit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fortyIntuit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/sixteenIntuit"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewInitialMuscleMass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="@dimen/sixteenIntuit"
+                    android:text="Initial muscle mass:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/seventeenIntuit" />
+
+                <TextView
+                    android:id="@+id/textViewTargetMuscleMass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingEnd="@dimen/sixteenIntuit"
+                    android:text="Target muscle mass:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/seventeenIntuit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fourIntuit"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewInitialMuscleMassValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sixteenIntuit"
+                    android:layout_weight="0.225"
+                    android:background="@drawable/text_view_weight"
+                    android:gravity="center"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentyTwoIntuit" />
+
+                <TextView
+                    android:id="@+id/textViewEmpty6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.55" />
+
+                <TextView
+                    android:id="@+id/textViewTargetMuscleMassValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/sixteenIntuit"
+                    android:layout_weight="0.225"
+                    android:background="@drawable/text_view_weight"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentyTwoIntuit" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoHundredAndFiftyIntuit"
+            android:layout_below="@+id/linearLayoutMuscleMass"
+            android:layout_marginLeft="@dimen/eightIntuit"
+            android:layout_marginTop="@dimen/sixIntuit"
+            android:layout_marginRight="@dimen/eightIntuit">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:id="@+id/textViewControlMuscleMassChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineChart"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:text="Control muscle mass change:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteenIntuit"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/textViewControlMuscleMassChange"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:background="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMuscleMassController"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider17"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

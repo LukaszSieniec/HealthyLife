@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.adding_product.DialogFragmentNameProduct">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEnteredNameDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonCancelProductName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/backgroundScreens"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_clear_white_fragment_search" />
+
+        <TextView
+            android:id="@+id/textViewEnterNameProductDialogFragmentNameProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/backgroundScreens"
+            android:gravity="center"
+            android:paddingTop="@dimen/sixteenIntuit"
+            android:paddingBottom="@dimen/sixteenIntuit"
+            android:text="@string/textViewEnterNameProductDialogFragmentNameProduct"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyTwoIntuit"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSaveProductName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/backgroundScreens"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_check_white_add_new_product" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+        android:layout_marginTop="@dimen/thirtyTwoIntuit"
+        android:layout_marginRight="@dimen/thirtyTwoIntuit"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextEnterNameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ(), "
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/editTextEnterNameProduct"
+            android:inputType="textPersonName"
+            android:maxLength="100"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/textViewEmpty3"
+            android:layout_width="@dimen/sixHundredAndFiftyIntuit"
+            android:layout_height="@dimen/sixtyFiveIntuit" />
+
+    </LinearLayout>
+
+</LinearLayout>

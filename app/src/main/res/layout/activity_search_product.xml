@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dietDiary_background"
+    android:orientation="vertical"
+    tools:context="com.example.adding_product.SearchProduct">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/searchToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/backgroundScreens">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <ImageView
+                android:id="@+id/imageViewBackSearchProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/textViewDateSearchProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutSearchProduct"
+                android:layout_alignStart="@+id/linearLayoutSearchProduct"
+                android:layout_alignLeft="@+id/linearLayoutSearchProduct"
+                android:textColor="@color/dietDiary_background"
+                android:textSize="@dimen/fourteenIntuit" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSearchProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+                android:layout_toEndOf="@+id/imageViewBackSearchProduct"
+                android:layout_toRightOf="@+id/imageViewBackSearchProduct">
+
+                <TextView
+                    android:id="@+id/textViewNameMealSearchProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sixIntuit"
+                    android:text="Lunch"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentyTwoIntuit"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imageViewArrowSearchProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_marginTop="@dimen/eightIntuit"
+                    app:srcCompat="@drawable/ic_arrow_drop_down_calendar" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutSearchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundScreens"
+        android:minHeight="?attr/actionBarSize"
+        android:scrollbarSize="@dimen/fourIntuit"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pagerSearchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

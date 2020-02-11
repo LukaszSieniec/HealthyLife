@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dietDiary"
+            android:icon="@drawable/diet_diary"
+            android:title="Diet diary" />
+
+        <item
+            android:id="@+id/weightController"
+            android:icon="@drawable/weight_controller"
+            android:title="Weight controller" />
+
+        <item
+            android:id="@+id/muscleMassController"
+            android:icon="@drawable/weight_controller"
+            android:title="Muscle mass controller" />
+
+        <item
+            android:id="@+id/bodyCircuits"
+            android:icon="@drawable/body_circuits"
+            android:title="Body circuits" />
+
+    </group>
+
+    <item android:title="Methods">
+        <menu>
+            <item
+                android:id="@+id/HarissBenedict"
+                android:icon="@drawable/method_icon"
+                android:title="Hariss - Benedict" />
+            <item
+                android:id="@+id/MifflinStJeor"
+                android:icon="@drawable/method_icon"
+                android:title="Mifflin St. Jeor" />
+            <item
+                android:id="@+id/KatchMcArdle"
+                android:icon="@drawable/method_icon"
+                android:title="Katch - McArdle" />
+        </menu>
+    </item>
+
+
+</menu>

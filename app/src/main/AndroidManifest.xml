@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthylife">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.diary.ActivityKatchMcArdle"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.diary.ActivityHarissBenedict"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.diary.ActivityMifflinStJeor"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.edit_product.EditProduct"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.adding_product.SaveProduct"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.adding_product.SearchProduct"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.signin.SignIn"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.diary.MainScreen"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.registration.RegistrationProcessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity
+
+            android:name=".StartNowActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

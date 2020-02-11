@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundScreens"
+    tools:context="com.example.registration.InformationFragment">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:text="@string/textViewWelcome"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirtyFiveIntuit"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/sixteenIntuit"
+        android:layout_marginTop="@dimen/sixtyFourIntuit"
+        android:layout_marginRight="@dimen/sixteenIntuit"
+        android:gravity="center"
+        android:text="@string/textViewMessage"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyTwoIntuit" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNextInformation"
+        android:layout_width="@dimen/sixtyFourIntuit"
+        android:layout_height="@dimen/sixtyFourIntuit"
+        android:layout_below="@+id/textViewMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/eightyIntuit"
+        android:background="@drawable/button_bg_round"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/next_arrow" />
+</RelativeLayout>

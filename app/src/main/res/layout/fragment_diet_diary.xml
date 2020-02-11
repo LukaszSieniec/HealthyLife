@@ -1,0 +1,467 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nestedScrollViewDietDiary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/dietDiary_background"
+    tools:context="com.example.diary.DietDiaryFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/seventyIntuit">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/twentyFourIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            app:cardCornerRadius="@dimen/fourIntuit"
+            app:cardElevation="@dimen/twoIntuit"
+            app:cardMaxElevation="@dimen/twoIntuit">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonAddProductBreakfast"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button_type_of_meal"
+                        android:drawableStart="@drawable/ic_add_circle"
+                        android:drawablePadding="@dimen/sixteenIntuit"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/eightIntuit"
+                        android:paddingTop="@dimen/sixteenIntuit"
+                        android:paddingBottom="@dimen/sixteenIntuit"
+                        android:text="@string/buttonAddProductBreakfast"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/twentyFourIntuit"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/textViewTotalCaloriesBreakfast"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="@dimen/sixteenIntuit"
+                        android:textColor="@color/backgroundScreens"
+                        android:textSize="@dimen/eighteenIntuit"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewBreakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewBreakfast"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            app:cardCornerRadius="@dimen/fourIntuit"
+            app:cardElevation="@dimen/twoIntuit"
+            app:cardMaxElevation="@dimen/twoIntuit">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonAddProductLunch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button_type_of_meal"
+                        android:drawableLeft="@drawable/ic_add_circle"
+                        android:drawablePadding="@dimen/sixteenIntuit"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/eightIntuit"
+                        android:paddingTop="@dimen/sixteenIntuit"
+                        android:paddingBottom="@dimen/sixteenIntuit"
+                        android:text="@string/buttonAddProductLunch"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/twentyTwoIntuit"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/textViewTotalCaloriesLunch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="@dimen/sixteenIntuit"
+                        android:textColor="@color/backgroundScreens"
+                        android:textSize="@dimen/eighteenIntuit"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewLunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewLunch"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            app:cardCornerRadius="@dimen/fourIntuit"
+            app:cardElevation="@dimen/twoIntuit"
+            app:cardMaxElevation="@dimen/twoIntuit">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonAddProductDinner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button_type_of_meal"
+                        android:drawableLeft="@drawable/ic_add_circle"
+                        android:drawablePadding="@dimen/sixteenIntuit"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/eightIntuit"
+                        android:paddingTop="@dimen/sixteenIntuit"
+                        android:paddingBottom="@dimen/sixteenIntuit"
+                        android:text="@string/buttonAddProductDinner"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/twentyTwoIntuit"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/textViewTotalCaloriesDinner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="@dimen/sixteenIntuit"
+                        android:textColor="@color/backgroundScreens"
+                        android:textSize="@dimen/eighteenIntuit"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewDinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSnacks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewDinner"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            app:cardCornerRadius="@dimen/fourIntuit"
+            app:cardElevation="@dimen/twoIntuit"
+            app:cardMaxElevation="@dimen/twoIntuit">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/buttonAddSnacks"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/button_type_of_meal"
+                        android:drawableLeft="@drawable/ic_add_circle"
+                        android:drawablePadding="@dimen/sixteenIntuit"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/eightIntuit"
+                        android:paddingTop="@dimen/sixteenIntuit"
+                        android:paddingBottom="@dimen/sixteenIntuit"
+                        android:text="@string/buttonAddSnacks"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/twentyTwoIntuit"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/textViewTotalCaloriesSnacks"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="@dimen/sixteenIntuit"
+                        android:textColor="@color/backgroundScreens"
+                        android:textSize="@dimen/eighteenIntuit"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSnacks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewSnacks"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/sixteenIntuit"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/twentyFourIntuit"
+            android:layout_marginEnd="@dimen/twelveIntuit"
+            android:layout_marginRight="@dimen/twelveIntuit"
+            android:layout_toStartOf="@+id/tableLayout"
+            android:layout_toLeftOf="@+id/tableLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewSummary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/eightIntuit"
+                android:text="@string/textViewSummary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteenIntuit"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textViewCaloriesToBeConsumed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:text="@string/textViewCaloriesToBeConsumed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteenIntuit" />
+
+                <TextView
+                    android:id="@+id/textViewCaloriesToBeConsumedAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#FFA5A2A2"
+                    android:textSize="@dimen/fourteenIntuit"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textViewCaloriesConsumed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:text="@string/textViewCaloriesConsumed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteenIntuit" />
+
+                <TextView
+                    android:id="@+id/textViewCaloriesConsumedAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteenIntuit"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/oneIntuit"
+                android:layout_marginTop="@dimen/eightIntuit"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eightIntuit"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPercentFromGDA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:textColor="#FFA5A2A2"
+                    android:textSize="@dimen/fourteenIntuit"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textViewTotalCaloriesGDA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#FFA5A2A2"
+                    android:textSize="@dimen/fourteenIntuit"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oneIntuit"
+            android:layout_below="@+id/linearLayoutSummary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:background="@color/black" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/divider16"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            android:layout_marginBottom="@dimen/twentyIntuit">
+
+        </TableLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="475dp"
+            android:layout_below="@+id/divider16"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:layout_toEndOf="@+id/linearLayoutSummaryMacro">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSummaryMacro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider16"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/sixteenIntuit"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/eightIntuit"
+                android:layout_weight="1"
+                android:text="Macronutrients"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteenIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSummaryCarbohydrates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteenIntuit" />
+
+            <TextView
+                android:id="@+id/textViewSummaryProtein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteenIntuit" />
+
+            <TextView
+                android:id="@+id/textViewSummaryFat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteenIntuit" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

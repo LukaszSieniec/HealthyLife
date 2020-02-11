@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adding_product.LastAddedFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewRecentlyAddedProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/sixteenIntuit"
+            android:paddingTop="@dimen/eightIntuit"
+            android:paddingRight="@dimen/thirtyTwoIntuit"
+            android:paddingBottom="@dimen/eightIntuit"
+            android:text="Recently added products:"
+            android:textColor="@color/backgroundScreens"
+            android:textSize="@dimen/twentyTwoIntuit" />
+
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/textViewRecentlyAddedProducts"
+            android:background="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecentlyAddedProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider19" />
+    </RelativeLayout>
+
+
+</ScrollView>

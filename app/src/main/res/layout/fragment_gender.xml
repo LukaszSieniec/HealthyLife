@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundScreens"
+    tools:context="com.example.registration.GenderFragment" >
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:text="@string/textViewGender"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyFourIntuit"
+        android:textStyle="bold" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageViewWoman"
+        android:layout_width="@dimen/OneHundredAndFiftyIntuit"
+        android:layout_height="@dimen/OneHundredAndFiftyIntuit"
+        android:layout_below="@+id/textViewGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fortyEightIntuit"
+        android:alpha="0.2"
+        android:src="@drawable/woman"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="@dimen/twoIntuit"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#7E0F66"
+        app:civ_shadow_radius="10" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageViewMan"
+        android:layout_width="@dimen/OneHundredAndFiftyIntuit"
+        android:layout_height="@dimen/OneHundredAndFiftyIntuit"
+        android:layout_below="@+id/textViewManOrWoman"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.2"
+        android:src="@drawable/man"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="@dimen/twoIntuit"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#7E0F66"
+        app:civ_shadow_radius="10" />
+
+
+    <TextView
+        android:id="@+id/textViewManOrWoman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewWoman"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/fourIntuit"
+        android:paddingBottom="@dimen/fourIntuit"
+        android:text="@string/textViewManOrWoman"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyTwoIntuit"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonNextGender"
+        android:layout_width="@dimen/sixtyFourIntuit"
+        android:layout_height="@dimen/sixtyFourIntuit"
+        android:layout_below="@+id/imageViewMan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fortyEightIntuit"
+        android:background="@drawable/button_bg_round"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/next_arrow" />
+
+</RelativeLayout>

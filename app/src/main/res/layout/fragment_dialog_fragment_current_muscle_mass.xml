@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundScreens"
+    android:orientation="vertical"
+    tools:context="com.example.diary.DialogFragmentCurrentMuscleMass">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonCancelCurrentMuscleMass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/backgroundScreens"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_clear_white_fragment_search" />
+
+        <TextView
+            android:id="@+id/textViewDateCurrentMuscleMass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/backgroundScreens"
+            android:gravity="center"
+            android:paddingTop="@dimen/sixteenIntuit"
+            android:paddingBottom="@dimen/sixteenIntuit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyTwoIntuit"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSaveCurrentMuscleMass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/backgroundScreens"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_check_white_add_new_product" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDecreaseMuscleMass"
+            android:layout_width="@dimen/thirtyFiveIntuit"
+            android:layout_height="@dimen/thirtyFiveIntuit"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            android:background="@drawable/button_change_weight"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyIntuit" />
+
+        <EditText
+            android:id="@+id/editTextChangeCurrentMuscleMass"
+            android:layout_width="@dimen/OneHundredAndFiftyIntuit"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unselected_button_bg_rectangle"
+            android:digits="0123456789."
+            android:ems="10"
+            android:gravity="center"
+            android:hint="kg"
+            android:inputType="number"
+            android:paddingTop="@dimen/fourIntuit"
+            android:paddingBottom="@dimen/fourIntuit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/thirtyIntuit"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonIncreaseMuscleMass"
+            android:layout_width="@dimen/thirtyFiveIntuit"
+            android:layout_height="@dimen/thirtyFiveIntuit"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:background="@drawable/button_change_weight"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyIntuit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewEmpty7"
+        android:layout_width="@dimen/sixHundredAndFiftyIntuit"
+        android:layout_height="@dimen/sixtyFiveIntuit" />
+
+
+</LinearLayout>

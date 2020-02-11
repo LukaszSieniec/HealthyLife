@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/OneHundredAndFiftyIntuit"
+    android:background="@color/backgroundScreens"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitleNavHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteenIntuit"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:text="HealthyLife"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentyEightIntuit"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAccountNameNavHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteenIntuit"
+        android:layout_marginTop="@dimen/twentyFourIntuit"
+        android:text="Your email address:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteenIntuit" />
+
+    <TextView
+        android:id="@+id/textViewEmailNavHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteenIntuit"
+        android:layout_marginTop="@dimen/fourIntuit"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteenIntuit" />
+</LinearLayout>

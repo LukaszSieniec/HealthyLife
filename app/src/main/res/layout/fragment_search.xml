@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adding_product.SearchFragment">
+
+    <EditText
+        android:id="@+id/editTextViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirtyTwoIntuit"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:layout_marginRight="@dimen/thirtyTwoIntuit"
+        android:background="@drawable/frame_for_autocomplete"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawableRight="@drawable/ic_clear_black_selected_product"
+        android:drawablePadding="@dimen/sixteenIntuit"
+        android:hint="Search for a product"
+        android:paddingLeft="@dimen/sixteenIntuit"
+        android:paddingTop="@dimen/eightIntuit"
+        android:paddingRight="@dimen/sixteenIntuit"
+        android:paddingBottom="@dimen/eightIntuit" />
+
+    <ListView
+        android:id="@+id/listViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dividerSearch"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:divider="@drawable/divider_list_search" />
+
+    <ListView
+        android:id="@+id/listViewSelectedProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dividerSearch"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:divider="@drawable/divider_list_selected_product"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/dividerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twoIntuit"
+        android:layout_below="@+id/editTextViewSearch"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/sixteenIntuit"
+        android:background="@color/white" />
+
+</RelativeLayout>
+
+
+
+

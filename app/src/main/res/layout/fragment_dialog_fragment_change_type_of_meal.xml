@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.adding_product.DialogFragmentChangeTypeOfMeal">
+
+
+    <Button
+        android:id="@+id/buttonBreakfastChangeTypeOfMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/thirtyTwoIntuit"
+        android:paddingTop="@dimen/twentyFourIntuit"
+        android:paddingRight="@dimen/thirtyTwoIntuit"
+        android:paddingBottom="@dimen/eightIntuit"
+        android:text="Breakfast"
+        android:textAllCaps="false"
+        android:textSize="@dimen/eighteenIntuit"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonLunchChangeTypeOfMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/thirtyTwoIntuit"
+        android:paddingTop="@dimen/eightIntuit"
+        android:paddingRight="@dimen/thirtyTwoIntuit"
+        android:paddingBottom="@dimen/eightIntuit"
+        android:text="Lunch"
+        android:textAllCaps="false"
+        android:textSize="@dimen/eighteenIntuit"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonDinnerChangeTypeOfMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/thirtyTwoIntuit"
+        android:paddingTop="@dimen/eightIntuit"
+        android:paddingRight="@dimen/thirtyTwoIntuit"
+        android:paddingBottom="@dimen/eightIntuit"
+        android:text="Dinner"
+        android:textAllCaps="false"
+        android:textSize="@dimen/eighteenIntuit"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSnacksChangeTypeOfMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/thirtyTwoIntuit"
+        android:paddingTop="@dimen/eightIntuit"
+        android:paddingRight="@dimen/thirtyTwoIntuit"
+        android:paddingBottom="@dimen/twentyFourIntuit"
+        android:text="Snacks"
+        android:textAllCaps="false"
+        android:textSize="@dimen/eighteenIntuit"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewEmpty5"
+        android:layout_width="@dimen/fiveHundredIntuit"
+        android:layout_height="@dimen/oneIntuit"
+        android:background="@color/white" />
+</LinearLayout>

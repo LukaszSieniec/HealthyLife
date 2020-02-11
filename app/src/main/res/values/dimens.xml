@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="lockAppBarClosed"> @dimen/_43sdp </dimen>
+    <dimen name="unlockAppBarClosed"> @dimen/_231sdp </dimen>
+
+    <dimen name="oneIntuit"> @dimen/_1sdp</dimen>                             <!-- 1dp-->
+    <dimen name="twoIntuit"> @dimen/_2sdp</dimen>                             <!-- 2dp-->
+    <dimen name="threeIntuit"> @dimen/_2sdp</dimen>                           <!-- 3dp-->
+    <dimen name="fourIntuit"> @dimen/_3sdp</dimen>                            <!-- 4dp-->
+    <dimen name="fiveIntuit"> @dimen/_4sdp</dimen>                            <!-- 5dp-->
+    <dimen name="sixIntuit"> @dimen/_5sdp</dimen>                             <!-- 6dp-->
+    <dimen name="sevenIntuit"> @dimen/_5sdp</dimen>                           <!-- 7dp-->
+    <dimen name="eightIntuit"> @dimen/_6sdp</dimen>                           <!-- 8dp-->
+    <dimen name="nineIntuit"> @dimen/_7sdp</dimen>                            <!-- 9dp-->
+    <dimen name="tenIntuit"> @dimen/_8sdp</dimen>                             <!-- 10dp-->
+    <dimen name="elevenIntuit"> @dimen/_9sdp</dimen>                          <!-- 11dp-->
+    <dimen name="twelveIntuit"> @dimen/_9sdp</dimen>                          <!-- 12dp-->
+    <dimen name="thirteenIntuit"> @dimen/_10sdp</dimen>                       <!-- 13dp-->
+    <dimen name="fourteenIntuit"> @dimen/_11sdp</dimen>                       <!-- 14dp-->
+    <dimen name="fifteenIntuit"> @dimen/_12sdp</dimen>                        <!-- 15dp-->
+    <dimen name="sixteenIntuit"> @dimen/_12sdp</dimen>                        <!-- 16dp-->
+    <dimen name="seventeenIntuit"> @dimen/_13sdp</dimen>                      <!-- 17dp-->
+    <dimen name="eighteenIntuit"> @dimen/_14sdp</dimen>                       <!-- 18dp-->
+    <dimen name="twentyIntuit"> @dimen/_15sdp</dimen>                         <!-- 20dp-->
+    <dimen name="twentyTwoIntuit"> @dimen/_17sdp</dimen>                      <!-- 22dp-->
+    <dimen name="twentyFourIntuit"> @dimen/_18sdp</dimen>                     <!-- 24dp-->
+    <dimen name="twentySixIntuit"> @dimen/_20sdp</dimen>                      <!-- 26dp-->
+    <dimen name="twentyEightIntuit"> @dimen/_22sdp</dimen>                    <!-- 28dp-->
+    <dimen name="thirtyIntuit"> @dimen/_23sdp</dimen>                         <!-- 30dp-->
+    <dimen name="thirtyTwoIntuit"> @dimen/_25sdp</dimen>                      <!-- 32dp-->
+    <dimen name="thirtyFiveIntuit"> @dimen/_27sdp</dimen>                     <!-- 35dp-->
+    <dimen name="fortyIntuit"> @dimen/_31sdp</dimen>                          <!-- 40dp-->
+    <dimen name="fortyEightIntuit"> @dimen/_37sdp</dimen>                     <!-- 48dp-->
+    <dimen name="fiftyIntuit"> @dimen/_38sdp</dimen>                          <!-- 50dp-->
+    <dimen name="fiftySixIntuit"> @dimen/_43sdp</dimen>                       <!-- 56dp-->
+    <dimen name="fiftyEightIntuit"> @dimen/_45sdp</dimen>                     <!-- 58dp-->
+    <dimen name="sixtyIntuit"> @dimen/_46sdp</dimen>                          <!-- 60dp-->
+    <dimen name="sixtyThreeIntuit"> @dimen/_48sdp</dimen>                     <!-- 63dp-->
+    <dimen name="sixtyFourIntuit"> @dimen/_49sdp</dimen>                      <!-- 64dp-->
+    <dimen name="sixtyFiveIntuit"> @dimen/_50sdp</dimen>                      <!-- 65dp-->
+    <dimen name="seventyIntuit"> @dimen/_54sdp</dimen>                        <!-- 70dp-->
+    <dimen name="eightyIntuit"> @dimen/_62sdp</dimen>                         <!-- 80dp-->
+    <dimen name="ninetySixIntuit"> @dimen/_74sdp</dimen>                      <!-- 96dp-->
+    <dimen name="oneHundredIntuit"> @dimen/_77sdp</dimen>                     <!-- 100dp-->
+    <dimen name="oneHundredAndTwentyFiveIntuit"> @dimen/_96sdp</dimen>        <!-- 125dp-->
+    <dimen name="OneHundredAndFortyIntuit"> @dimen/_108sdp</dimen>            <!-- 140dp-->
+    <dimen name="OneHundredAndFiftyIntuit"> @dimen/_115sdp</dimen>            <!-- 150dp-->
+    <dimen name="OneHundredAndSeventyFiveIntuit"> @dimen/_135sdp</dimen>      <!-- 175dp-->
+    <dimen name="twoHundredIntuit"> @dimen/_154sdp</dimen>                    <!-- 200dp-->
+    <dimen name="twoHundredAndFiftyIntuit">@dimen/_192sdp</dimen>             <!-- 250dp-->
+    <dimen name="threeHundredIntuit">@dimen/_231sdp</dimen>                   <!-- 300dp-->
+    <dimen name="threeHundredAndThirtyIntuit">@dimen/_254sdp</dimen>          <!-- 330dp-->
+    <dimen name="fourHundredAndFiveIntuit">@dimen/_312sdp</dimen>             <!-- 405dp-->
+    <dimen name="fiveHundredIntuit">@dimen/_385sdp</dimen>                    <!-- 500dp-->
+    <dimen name="sixHundredIntuit">@dimen/_462sdp</dimen>                     <!-- 600dp-->
+    <dimen name="sixHundredAndFiftyIntuit">@dimen/_500sdp</dimen>             <!-- 650dp-->
+
+
+
+
+
+</resources>

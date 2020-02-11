@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dietDiary_background"
+    tools:context="com.example.adding_product.NewProductFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/sixtyFourIntuit">
+
+        <TextView
+            android:id="@+id/textViewQuestionProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/sixteenIntuit"
+            android:paddingTop="@dimen/eightIntuit"
+            android:paddingRight="@dimen/thirtyTwoIntuit"
+            android:paddingBottom="@dimen/eightIntuit"
+            android:text="@string/textViewQuestionProduct"
+            android:textColor="@color/backgroundScreens"
+            android:textSize="@dimen/twentyTwoIntuit" />
+
+        <View
+            android:id="@+id/divider15"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/textViewQuestionProduct"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewProductNameNewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider15"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/sixteenIntuit"
+            android:paddingTop="@dimen/eightIntuit"
+            android:paddingBottom="@dimen/eightIntuit"
+            android:text="@string/textViewProductNameNewProduct"
+            android:textSize="@dimen/eighteenIntuit" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/textViewProductNameNewProduct"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEnterProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider10"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewProductNewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/sixteenIntuit"
+                android:paddingTop="@dimen/eightIntuit"
+                android:text="@string/textViewProductNewProduct"
+                android:textSize="@dimen/twentyTwoIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEnterProductNameNewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/sixteenIntuit"
+                android:paddingBottom="@dimen/eightIntuit"
+                android:text="@string/textViewEnterProductNameNewProduct"
+                android:textSize="@dimen/sixteenIntuit" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/linearLayoutEnterProductName"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewPortionAndNutritionInformationNewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider12"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/sixteenIntuit"
+            android:paddingTop="@dimen/eightIntuit"
+            android:paddingBottom="@dimen/eightIntuit"
+            android:text="@string/textViewPortionAndNutritionInformationNewProduct"
+            android:textSize="@dimen/eighteenIntuit" />
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/textViewPortionAndNutritionInformationNewProduct"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNutritionalValueNewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider13"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNutritionalValueNewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/sixteenIntuit"
+                android:paddingTop="@dimen/eightIntuit"
+                android:text="@string/textViewNutritionalValueNewProduct"
+                android:textSize="@dimen/twentyTwoIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEnterTheNutritionalValueNewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/sixteenIntuit"
+                android:paddingBottom="@dimen/eightIntuit"
+                android:text="@string/textViewEnterTheNutritionalValueNewProduct"
+                android:textSize="@dimen/sixteenIntuit" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider14"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/linearLayoutNutritionalValueNewProduct"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/oneHundredIntuit"
+            android:layout_height="@dimen/oneHundredIntuit"
+            android:layout_below="@+id/divider14"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            app:srcCompat="@drawable/ic_product_menu_search" />
+
+        <Button
+            android:id="@+id/buttonSaveNewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/sixtyFourIntuit"
+            android:layout_marginTop="@dimen/thirtyTwoIntuit"
+            android:layout_marginRight="@dimen/sixtyFourIntuit"
+            android:background="@drawable/button_save_product"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenIntuit"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

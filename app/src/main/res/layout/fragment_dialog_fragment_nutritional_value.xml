@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.adding_product.DialogFragmentNutritionalValue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonCancelNutritionalValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/backgroundScreens"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_clear_white_fragment_search" />
+
+        <TextView
+            android:id="@+id/textViewNutritionalValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/backgroundScreens"
+            android:gravity="center"
+            android:paddingTop="@dimen/sixteenIntuit"
+            android:paddingBottom="@dimen/sixteenIntuit"
+            android:text="@string/textViewNutritionalValue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyTwoIntuit"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSaveProductNutritionalValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/backgroundScreens"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_check_white_add_new_product" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewAMetricPortionNutritionalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginTop="@dimen/sixteenIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:text="@string/textViewAMetricPortionNutritionalValue"
+                android:textSize="@dimen/sixteenIntuit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextAMetricPortionNutritionalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/editTextAMetricPortionNutritionalValue"
+                    android:inputType="textPersonName"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/textViewUnitNutritionalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/eightIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="@string/textViewUnitNutritionalValue"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentyIntuit" />
+
+                <Spinner
+                    android:id="@+id/spinnerNutritionalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCaloriesNutritionalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginTop="@dimen/eightIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:text="@string/textViewCaloriesNutritionalValue"
+                android:textSize="@dimen/sixteenIntuit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextCaloriesNutritionalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:hint="@string/editTextCaloriesNutritionalValue"
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/textViewCaloriesNutritionalValueInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/eightIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:text="@string/textViewCaloriesNutritionalValueInfo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentyIntuit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewProteinNutritionalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginTop="@dimen/eightIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:text="@string/textViewProteinNutritionalValue"
+                android:textSize="@dimen/sixteenIntuit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextProteinNutritionalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:hint="@string/editTextProteinNutritionalValue"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/textViewProteinNutritionalValueUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/eightIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:text="@string/textViewProteinNutritionalValueUnit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentyIntuit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCarbohydratesNutritionalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginTop="@dimen/eightIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:text="@string/textViewCarbohydratesNutritionalValue"
+                android:textSize="@dimen/sixteenIntuit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextCarbohydratesNutritionalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:hint="@string/editTextCarbohydratesNutritionalValue"
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/textViewCarbohydratesNutritionalValueUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/eightIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:text="@string/textViewCarbohydratesNutritionalValueUnit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentyIntuit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewFatNutritionalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginTop="@dimen/eightIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:text="@string/textViewFatNutritionalValue"
+                android:textSize="@dimen/sixteenIntuit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenIntuit"
+                android:layout_marginRight="@dimen/sixteenIntuit"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextFatNutritionalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:hint="@string/editTextFatNutritionalValue"
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/textViewFatNutritionalValueUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/eightIntuit"
+                    android:layout_marginLeft="@dimen/eightIntuit"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:text="@string/textViewFatNutritionalValueUnit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentyIntuit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewEmpty4"
+                android:layout_width="@dimen/sixHundredAndFiftyIntuit"
+                android:layout_height="@dimen/thirtyTwoIntuit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

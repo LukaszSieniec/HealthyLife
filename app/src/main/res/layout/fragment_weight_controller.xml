@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dietDiary_background"
+    tools:context="com.example.diary.WeightControllerFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/oneHundredIntuit">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="#B35B6DE0"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sixteenIntuit">
+
+            <TextView
+                android:id="@+id/textViewCurrentWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteenIntuit"
+                android:gravity="center"
+                android:text="Current weight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twentyTwoIntuit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCurrentWeightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fourIntuit"
+                android:background="@drawable/text_view_weight"
+                android:gravity="center"
+                android:paddingLeft="@dimen/thirtyTwoIntuit"
+                android:paddingEnd="@dimen/thirtyTwoIntuit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fortyIntuit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/sixteenIntuit"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewInitialWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/sixteenIntuit"
+                    android:text="Initial weight:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteenIntuit" />
+
+                <TextView
+                    android:id="@+id/textViewTargetWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingEnd="@dimen/sixteenIntuit"
+                    android:text="Target weight:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteenIntuit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fourIntuit"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewInitialWeightValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sixteenIntuit"
+                    android:layout_weight="0.225"
+                    android:background="@drawable/text_view_weight"
+                    android:gravity="center"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentyTwoIntuit" />
+
+                <TextView
+                    android:id="@+id/textViewEmpty6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.55" />
+
+                <TextView
+                    android:id="@+id/textViewTargetWeightValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/sixteenIntuit"
+                    android:layout_weight="0.225"
+                    android:background="@drawable/text_view_weight"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentyTwoIntuit" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoHundredAndFiftyIntuit"
+            android:layout_below="@+id/linearLayoutWeight"
+            android:layout_marginLeft="@dimen/eightIntuit"
+            android:layout_marginTop="@dimen/sixIntuit"
+            android:layout_marginRight="@dimen/eightIntuit">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:id="@+id/textViewControlWeightChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineChart"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:text="Control weight change:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteenIntuit"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twoIntuit"
+            android:layout_below="@+id/textViewControlWeightChange"
+            android:layout_marginTop="@dimen/eightIntuit"
+            android:background="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewWeightController"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider17"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B6DE0"
+    tools:context=".StartNowActivity">
+
+    <ImageView
+        android:id="@+id/imageViewHealthyLifestyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/twoHundredAndFiftyIntuit"
+        android:layout_centerHorizontal="true"
+        android:background="@color/backgroundScreens"
+        android:scaleType="centerInside"
+        android:src="@drawable/healthy_lifestyle" />
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewHealthyLifestyle"
+        android:gravity="center"
+        android:text="@string/textViewTitle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirtyFiveIntuit"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonStartNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/sixteenIntuit"
+        android:layout_marginTop="@dimen/eightyIntuit"
+        android:layout_marginRight="@dimen/sixteenIntuit"
+        android:background="@color/white"
+        android:text="@string/buttonStartNow"
+        android:textColor="@color/backgroundScreens"
+        android:textSize="@dimen/twentyTwoIntuit" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStartNow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_49sdp">
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fourIntuit"
+            android:paddingEnd="@dimen/fourIntuit"
+            android:paddingRight="@dimen/fourIntuit"
+            android:text="@string/textViewQuestion"
+            android:textSize="@dimen/twentyIntuit" />
+
+
+        <TextView
+            android:id="@+id/textViewSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/fourIntuit"
+            android:paddingLeft="@dimen/fourIntuit"
+            android:paddingRight="@dimen/fourIntuit"
+            android:text="@string/textViewSignIn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentyIntuit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

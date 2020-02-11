@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollViewMifflinStJeor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dietDiary_background"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_mifflin_st_jeor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/thirtyTwoIntuit">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMifflinStJeor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/sixteenIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewMifflinStJeor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerViewMifflinStJeor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/sixteenIntuit"
+            android:layout_marginTop="@dimen/thirtyTwoIntuit"
+            android:layout_marginRight="@dimen/sixteenIntuit"
+            app:cardCornerRadius="@dimen/eightIntuit">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/eightIntuit">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutSummaryMifflinStJeor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Summary"
+                        android:textColor="@color/backgroundScreens"
+                        android:textSize="@dimen/twentyTwoIntuit"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutAverageMifflinStJeor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linearLayoutSummaryMifflinStJeor"
+                    android:layout_marginTop="@dimen/sixteenIntuit"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewAveragePerDayMifflin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:paddingTop="@dimen/twoIntuit"
+                        android:paddingBottom="@dimen/twoIntuit"
+                        android:text="Average value per day:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sixteenIntuit"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewAveragePerDayValueMifflin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:paddingTop="@dimen/twoIntuit"
+                        android:paddingBottom="@dimen/twoIntuit"
+                        android:textSize="@dimen/eighteenIntuit"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider21"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/oneIntuit"
+                    android:layout_below="@+id/linearLayoutAverageMifflinStJeor"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutSumMifflinStJeor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linearLayoutAverageMifflinStJeor"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewSumMifflin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:paddingTop="@dimen/twoIntuit"
+                        android:paddingBottom="@dimen/twoIntuit"
+                        android:text="Sum:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sixteenIntuit"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewSumValueMifflin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:paddingTop="@dimen/twoIntuit"
+                        android:paddingBottom="@dimen/twoIntuit"
+                        android:textSize="@dimen/eighteenIntuit"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/oneIntuit"
+                    android:layout_below="@+id/linearLayoutSumMifflinStJeor"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
