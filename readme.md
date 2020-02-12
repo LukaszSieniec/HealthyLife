@@ -29,3 +29,11 @@ The registration process consists of 8 stages. Examples of stages:
 # Calorie calendar
 
 ![15](https://user-images.githubusercontent.com/56321158/74293500-53a5b780-4d3b-11ea-8464-8268edb325c7.jpg)
+
+# Product search
+
+![17](https://user-images.githubusercontent.com/56321158/74293793-1c83d600-4d3c-11ea-82ce-4e480e30629b.jpg)
+
+# Adding a product to the diet diary
+
+![23](https://user-images.githubusercontent.com/56321158/74293888-77b5c880-4d3c-11ea-9f00-6fcedba01f71.jpg)
