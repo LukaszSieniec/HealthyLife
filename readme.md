@@ -21,3 +21,7 @@ The registration process consists of 8 stages. Examples of stages:
 # Diet diary
 
 ![11](https://user-images.githubusercontent.com/56321158/74291004-d591e280-4d33-11ea-97f9-0f9e6778c226.jpg) ![13](https://user-images.githubusercontent.com/56321158/74291006-d9be0000-4d33-11ea-99ab-4d9366888d33.jpg)
+
+# Weight Controller
+
+![14](https://user-images.githubusercontent.com/56321158/74293379-ed209980-4d3a-11ea-9fc7-c3176ebd8f70.jpg)
