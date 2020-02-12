@@ -60,8 +60,12 @@ The user has the possibility to search for products by entering their name. If a
 
 # Adding a product to the diet diary
 
+When the user selects a product, it will be transferred to the functionality that allows you to enter the weight of the product, and then calories and macroelements will be calculated based on the added weight.
+
 ![23](https://user-images.githubusercontent.com/56321158/74293888-77b5c880-4d3c-11ea-9f00-6fcedba01f71.jpg)
 
 # The process of adding your own product
+
+The user can add his own product if he cannot find it in the search process.
 
 ![19](https://user-images.githubusercontent.com/56321158/74295226-bb123600-4d40-11ea-8994-16a962a6e5cd.jpg) ![24](https://user-images.githubusercontent.com/56321158/74295237-c06f8080-4d40-11ea-964c-9160ba32bb8e.jpg)
