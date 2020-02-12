@@ -28,6 +28,9 @@ The registration process consists of 8 stages. Examples of stages:
 
 # Login process
 
+
+If the user has successfully passed the registration process, he can log in to his account using his email and password, which he provided during the registration process. For the login process to be successful, the user must provide a valid email address that meets the specified email pattern and a password of at least 6 characters.
+
 ![2](https://user-images.githubusercontent.com/56321158/74290812-4258ad00-4d33-11ea-9746-252b1555dec7.jpg)
 
 # Diet diary
