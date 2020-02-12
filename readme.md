@@ -13,3 +13,7 @@ The registration process consists of 8 stages. Examples of stages:
 * Activity level selection
 
 ![5](https://user-images.githubusercontent.com/56321158/74288643-3f5abe00-4d2d-11ea-9063-8cd7ab4ac6bf.jpg)
+
+* Login process
+
+![2](https://user-images.githubusercontent.com/56321158/74290812-4258ad00-4d33-11ea-9746-252b1555dec7.jpg)
