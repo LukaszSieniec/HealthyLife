@@ -35,6 +35,9 @@ If the user has successfully passed the registration process, he can log in to h
 
 # Diet diary
 
+* The diet diary allows the user to add, remove and modify products. The user has information about the amount of products he has consumed and the calories he has supplied to the organism at a given meal.
+* The part of the diet diary below provides the user with information about the calories he has provided to the organism throughout the day and the calories he can still consume. In addition, the user has access to the value of macronutrients supplied in food.
+
 ![11](https://user-images.githubusercontent.com/56321158/74291004-d591e280-4d33-11ea-97f9-0f9e6778c226.jpg) ![13](https://user-images.githubusercontent.com/56321158/74291006-d9be0000-4d33-11ea-99ab-4d9366888d33.jpg)
 
 # Weight Controller
