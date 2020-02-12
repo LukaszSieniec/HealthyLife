@@ -42,6 +42,8 @@ If the user has successfully passed the registration process, he can log in to h
 
 # Weight Controller
 
+The weight controller informs the user how his weight has changed over time. Thanks to this functionality, it is possible to consciously check progress and recalculate the total caloric demand for the current weight value.
+
 ![14](https://user-images.githubusercontent.com/56321158/74293379-ed209980-4d3a-11ea-9fc7-c3176ebd8f70.jpg)
 
 # Calorie calendar
