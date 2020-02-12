@@ -25,3 +25,7 @@ The registration process consists of 8 stages. Examples of stages:
 # Weight Controller
 
 ![14](https://user-images.githubusercontent.com/56321158/74293379-ed209980-4d3a-11ea-9fc7-c3176ebd8f70.jpg)
+
+# Calorie calendar
+
+![15](https://user-images.githubusercontent.com/56321158/74293500-53a5b780-4d3b-11ea-8464-8268edb325c7.jpg)
