@@ -49,3 +49,7 @@ The registration process consists of 8 stages. Examples of stages:
 # Adding a product to the diet diary
 
 ![23](https://user-images.githubusercontent.com/56321158/74293888-77b5c880-4d3c-11ea-9f00-6fcedba01f71.jpg)
+
+# The process of adding your own product
+
+![19](https://user-images.githubusercontent.com/56321158/74295226-bb123600-4d40-11ea-8994-16a962a6e5cd.jpg) ![24](https://user-images.githubusercontent.com/56321158/74295237-c06f8080-4d40-11ea-964c-9160ba32bb8e.jpg)
