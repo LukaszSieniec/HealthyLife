@@ -48,9 +48,13 @@ The weight controller informs the user how his weight has changed over time. Tha
 
 # Calorie calendar
 
+Calorie calendar provides an overview of the calories provided to the organism on a monthly basis, which allows you to increase the efficiency of the diet and obtain information whether the user maintains a positive or negative calorie balance.
+
 ![15](https://user-images.githubusercontent.com/56321158/74293500-53a5b780-4d3b-11ea-8464-8268edb325c7.jpg)
 
 # Product search
+
+The user has the possibility to search for products by entering their name. If a product exists in the database, it will be displayed to the user so that he can select it and then proceed to the product adding process.
 
 ![17](https://user-images.githubusercontent.com/56321158/74293793-1c83d600-4d3c-11ea-82ce-4e480e30629b.jpg)
 
