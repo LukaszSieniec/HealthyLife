@@ -3,6 +3,18 @@ The "HealthyLife" application providing functionality supporting a healthy lifes
 
 ![1](https://user-images.githubusercontent.com/56321158/74287063-5eefe780-4d29-11ea-8e2c-c95eaf1e6fda.jpg)
 
+# Functionality
+
+* Calculation of caloric demand based on the parameters entered by the user
+* Registration process
+* Login process
+* The process of searching, adding, removing and modifying products
+* The process of adding your own product
+* Diet Diary
+* Weight controller
+* Muscle mass controller
+* Calorie calendar
+
 # Registration process
 The registration process consists of 8 stages. Examples of stages:
 
